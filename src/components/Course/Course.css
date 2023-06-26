@@ -1,0 +1,104 @@
+.Course {
+  background-color: black;
+  color: white;
+  height: auto;
+  border-bottom: 0.1px solid rgb(35, 35, 35);
+  padding-bottom: 30px;
+}
+
+.CourseTitle {
+  font-size: 40px;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(#6610f2, #6f42c1, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.CourseContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.CourseItem {
+  height: 25vh;
+  width: 300px;
+  border: 2px solid rgb(56, 55, 55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -3em 3em rgba(11, 11, 11, 0.1), 0 0 0 2px rgb(7, 7, 7),
+    0.7em 0.7em 1em rgba(254, 253, 253, 0.3);
+  position: relative;
+}
+
+.CourseItem > span {
+  font-size: 30px;
+}
+
+.CourseNav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  opacity: 0;
+}
+
+.CourseText {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+a {
+  border: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: black;
+}
+
+.CourseNav:hover {
+  background: -webkit-linear-gradient(gray, rgb(196, 29, 57), black);
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .CourseItem {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .CourseContent {
+    flex-direction: column;
+  }
+  .CourseTitle > span {
+    text-align: center;
+  }
+  .CourseItem {
+    width: 80%;
+  }
+  .CourseItem > span {
+    font-size: 25px;
+  }
+}

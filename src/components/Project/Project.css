@@ -1,0 +1,15 @@
+.project {
+  background-color: black;
+  color: white;
+}
+.ProjectTitle {
+  font-size: 40px;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(#6610f2, #6f42c1, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}

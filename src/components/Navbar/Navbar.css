@@ -1,0 +1,124 @@
+.Navbar {
+  background-color: black;
+  color: white;
+  border-bottom: 0.1px solid rgb(35, 35, 35);
+}
+
+.NavbarWrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavbarLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.NavbarLeft > p {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+b {
+  font-size: 40px;
+  color: red;
+}
+
+.NavbarRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.NavbarRightText {
+  font-size: 18px;
+  position: relative;
+}
+
+.NavbarRightText::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  border-radius: 10px;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.NavbarRightText:hover::after {
+  width: 100%;
+}
+.link {
+  text-decoration: none;
+  border: none;
+  color: white;
+}
+
+.link:hover {
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .NavbarWrapper {
+    padding: 5px;
+    position: relative;
+  }
+  .NavbarLeft {
+    padding-left: 10px;
+  }
+
+  .NavbarLeft > P {
+    font-size: 20px;
+  }
+  b {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .NavbarRight {
+    flex: 2;
+    position: absolute;
+    right: 10px;
+  }
+  .NavbarRightText {
+    font-size: 13px;
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .NavbarWrapper {
+    padding: 2px;
+  }
+  .NavbarLeft {
+    padding-left: 2px;
+    display: flex;
+    align-items: center;
+  }
+  .NavbarLeft > P {
+    font-size: 10px;
+  }
+  b {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .NavbarRight {
+    display: block;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .NavbarRightText {
+    font-size: 7px;
+    margin: 0px 1px;
+  }
+}

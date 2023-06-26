@@ -1,0 +1,168 @@
+.Footer {
+  background-color: black;
+  color: white;
+  border-bottom: 0.1px solid rgb(35, 35, 35);
+}
+
+.FooterContact {
+  font-size: 40px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(#6610f2, #6f42c1, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.FooterWrapper {
+  display: flex;
+}
+
+.FooterLeft {
+  margin-left: 100px;
+  padding: 20px;
+  flex: 1;
+  width: 100%;
+}
+
+.Footertitle {
+  font-size: 40px;
+  font-weight: 800px;
+  color: gray;
+  margin: 15px 0px;
+}
+
+.FooterDesc {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.FooterConnect {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.FooterConnect .Icon:hover:nth-child(1) {
+  background-color: #3b5999;
+}
+
+.FooterConnect .Icon:hover:nth-child(2) {
+  background-color: #e4405f;
+}
+.FooterConnect .Icon:hover:nth-child(3) {
+  background-color: #55acee;
+}
+.FooterConnect .Icon:hover:nth-child(4) {
+  background-color: #55acee;
+}
+.FooterConnect .Icon:hover:nth-child(5) {
+  background-color: gray;
+}
+
+.FooterRight {
+  padding: 20px;
+  flex: 1;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 15px 0px;
+  background-color: rgb(61, 61, 61);
+  color: lightgray;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 15px 0px;
+  height: 150px;
+  background-color: rgb(61, 61, 61);
+  color: lightgray;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+::placeholder {
+  color: darkgray;
+}
+
+.button {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #e4405f;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.success-message {
+  font-size: 25px;
+  margin: 20px 0px;
+  color: rgb(30, 220, 30);
+}
+
+@media screen and (max-width: 800px) {
+  .FooterWrapper {
+    flex-direction: column;
+  }
+  .FooterLeft {
+    margin: 0;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Footertitle {
+    font-size: 25px;
+    margin: 10px 0px;
+  }
+  .FooterDesc {
+    font-size: 10px;
+  }
+  .FooterConnect {
+    margin-left: 0;
+    padding-left: 0;
+    width: 90%;
+  }
+
+  .Icon {
+    margin-right: 2px;
+  }
+  .form {
+    width: 90%;
+  }
+  .button {
+    padding: 8px;
+    font-size: 15px;
+    width: 50%;
+  }
+}
